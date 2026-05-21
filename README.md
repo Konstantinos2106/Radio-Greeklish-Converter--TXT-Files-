@@ -20,9 +20,9 @@
 
 ## Εγκατάσταση & Μεταγλώττιση
 
-1. **Ορίστε τις διαδρομές σας:** Ανοίξτε το αρχείο .c και ενημερώστε τις παρακάτω γραμμές με τις διαδρομές για τα δικά σας αρχεία κειμένου. Θυμηθείτε να χρησιμοποιήσετε διπλή κάθετο (\\) για τις διαδρομές στα Windows:
-    const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
-    const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";
+1. **Ορίστε τις διαδρομές σας:** Ανοίξτε το αρχείο `.c` και ενημερώστε τις παρακάτω γραμμές με τις διαδρομές για τα δικά σας αρχεία κειμένου. Θυμηθείτε να χρησιμοποιήσετε διπλή κάθετο (`\\`) για τις διαδρομές στα Windows:
+    `const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
+    const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";`
 
 2. **Μεταγλώττιση (Compilation):** Μπορείτε να το κάνετε compile χρησιμοποιώντας οποιονδήποτε standard compiler της C για Windows (όπως το [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Επειδή πρόκειται για εφαρμογή με Γραφικό Περιβάλλον (GUI) που χρησιμοποιεί εγγενείς γραμματοσειρές και χρώματα των Windows, πρέπει να συμπεριλάβετε τις εξής εντολές στον linker:
     -static-libgcc -mwindows
@@ -47,8 +47,8 @@ Many broadcasting tools (like [BUTT](https://danielnoethen.de/butt/)) struggle t
 ## How to Setup & Compile
 
 1. **Set your paths:** Open the `.c` file and update the following lines with the paths to your specific text files. Remember to use double backslashes (`\\`) for Windows paths:
-   const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
-   const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";
+   `const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
+   const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";`
 
 2. **Compilation:** You can compile this using any standard C compiler for Windows (like [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Since this is a GUI application that uses native Windows fonts and colors, you must include the following linker flags:
 -static-libgcc -mwindows
