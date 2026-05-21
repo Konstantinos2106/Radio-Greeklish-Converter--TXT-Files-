@@ -6,6 +6,8 @@
 
 Πολλά εργαλεία μετάδοσης (όπως το [BUTT](https://danielnoethen.de/butt/)) δυσκολεύονται να εμφανίσουν σωστά τους ελληνικούς UTF-8 χαρακτήρες στα μεταδεδομένα (metadata) του "Now Playing". Αυτό το εργαλείο λειτουργεί ως γέφυρα: διαβάζει το τρέχον κομμάτι από το αρχείο κειμένου που εξάγει ο player σας (π.χ. [AIMP](https://aimp.ru/) με το πρόσθετο [_Current Track Info to Any_](https://aimp.ru/?do=catalog&rec_id=358)), μετατρέπει αμέσως τους ελληνικούς χαρακτήρες σε Greeklish (Λατινικό αλφάβητο) και γράφει το καθαρό, έτοιμο για streaming κείμενο σε ένα νέο αρχείο.
 
+**Μπορείτε να κατεβάσε το `.c`αρχείο [εδώ](https://github.com/Konstantinos2106/Radio-Greeklish-Converter--TXT-Files-/raw/refs/heads/main/radio_greeklish.c)**
+
 ## Χαρακτηριστικά
 
 * **Έξυπνη Μηχανή Μετατροπής:** Μετατρέπει με ακρίβεια τους ελληνικούς χαρακτήρες σε λατινικούς, συμπεριλαμβανομένων των δίψηφων φωνηέντων (ου, αυ, ει) και των τονισμένων γραμμάτων, ενώ καθαρίζει και τους "ορφανούς" τόνους (floating accents).
@@ -36,6 +38,8 @@ A lightweight Windows GUI tool for web radio broadcasters. It automatically read
 A lightweight, automated Windows desktop application written in C that solves the common text-encoding problem for Greek internet radio broadcasters. 
 
 Many broadcasting tools (like [BUTT](https://danielnoethen.de/butt/)) struggle to correctly display UTF-8 Greek characters in the "Now Playing" stream metadata. This tool acts as a bridge: it reads the current track from your player's output text file (e.g., [AIMP](https://aimp.ru/) with [_Current Track Info to Any_](https://aimp.ru/?do=catalog&rec_id=358) extension), instantly converts the Greek characters to Greeklish (Latin alphabet), and writes the clean, stream-ready text to a new file.
+
+**You can download the `.c`file [here](https://github.com/Konstantinos2106/Radio-Greeklish-Converter--TXT-Files-/raw/refs/heads/main/radio_greeklish.c)**
 
 ## Features
 * **Smart Conversion Engine:** Accurately converts Greek characters to Latin, including diphthongs (ου, αυ, ει), accented characters, and cleans up floating accents.
