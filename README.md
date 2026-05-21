@@ -25,7 +25,7 @@
     `const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";`
 
 2. **Μεταγλώττιση (Compilation):** Μπορείτε να το κάνετε compile χρησιμοποιώντας οποιονδήποτε standard compiler της C για Windows (όπως το [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Επειδή πρόκειται για εφαρμογή με Γραφικό Περιβάλλον (GUI) που χρησιμοποιεί εγγενείς γραμματοσειρές και χρώματα των Windows, πρέπει να συμπεριλάβετε τις εξής εντολές στον linker:
-    -static-libgcc -mwindows
+    `-static-libgcc -mwindows`
 
 3. **Εκτέλεση (Run):** Ανοίξτε το μεταγλωττισμένο .exe, ξεκινήστε το ραδιοφωνικό σας λογισμικό και το εργαλείο θα αναλάβει αθόρυβα τις μετατροπές στο παρασκήνιο!
 
@@ -51,6 +51,6 @@ Many broadcasting tools (like [BUTT](https://danielnoethen.de/butt/)) struggle t
    `const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";`
 
 2. **Compilation:** You can compile this using any standard C compiler for Windows (like [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Since this is a GUI application that uses native Windows fonts and colors, you must include the following linker flags:
--static-libgcc -mwindows
+`-static-libgcc -mwindows`
 
 3. **Run:** Launch the compiled .exe, start your radio software, and the tool will silently handle the conversions in the background!
