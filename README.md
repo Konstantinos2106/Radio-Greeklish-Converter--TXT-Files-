@@ -1,10 +1,10 @@
 # Radio-Greeklish-Converter-TXT-Files
 
-Ένα ελαφρύ Windows GUI εργαλείο για web radio broadcasters. Διαβάζει αυτόματα τους ελληνικούς τίτλους τραγουδιών από ένα αρχείο TXT "Now Playing", τους μετατρέπει σε Greeklish και εξάγει ένα καθαρό αρχείο για streaming software όπως το BUTT, λύνοντας όλα τα προβλήματα κωδικοποίησης.
+Ένα ελαφρύ Windows GUI εργαλείο για web radio broadcasters. Διαβάζει αυτόματα τους ελληνικούς τίτλους τραγουδιών από ένα αρχείο TXT "Now Playing", τους μετατρέπει σε Greeklish και εξάγει ένα καθαρό αρχείο για streaming software όπως το [BUTT](https://danielnoethen.de/butt/), λύνοντας όλα τα προβλήματα κωδικοποίησης.
 
 Μια ελαφριά, αυτοματοποιημένη εφαρμογή για Windows γραμμένη σε C, που λύνει το συνηθισμένο πρόβλημα κωδικοποίησης κειμένου για τους παραγωγούς ελληνικών διαδικτυακών ραδιοφώνων.
 
-Πολλά εργαλεία μετάδοσης (όπως το BUTT) δυσκολεύονται να εμφανίσουν σωστά τους ελληνικούς UTF-8 χαρακτήρες στα μεταδεδομένα (metadata) του "Now Playing". Αυτό το εργαλείο λειτουργεί ως γέφυρα: διαβάζει το τρέχον κομμάτι από το αρχείο κειμένου που εξάγει ο player σας (π.χ. ([AIMP](https://aimp.ru/)) με το πρόσθετο _Current Track Info to Any_), μετατρέπει αμέσως τους ελληνικούς χαρακτήρες σε Greeklish (Λατινικό αλφάβητο) και γράφει το καθαρό, έτοιμο για streaming κείμενο σε ένα νέο αρχείο.
+Πολλά εργαλεία μετάδοσης (όπως το [BUTT](https://danielnoethen.de/butt/)) δυσκολεύονται να εμφανίσουν σωστά τους ελληνικούς UTF-8 χαρακτήρες στα μεταδεδομένα (metadata) του "Now Playing". Αυτό το εργαλείο λειτουργεί ως γέφυρα: διαβάζει το τρέχον κομμάτι από το αρχείο κειμένου που εξάγει ο player σας (π.χ. [AIMP](https://aimp.ru/) με το πρόσθετο [_Current Track Info to Any_](https://aimp.ru/?do=catalog&rec_id=358)), μετατρέπει αμέσως τους ελληνικούς χαρακτήρες σε Greeklish (Λατινικό αλφάβητο) και γράφει το καθαρό, έτοιμο για streaming κείμενο σε ένα νέο αρχείο.
 
 ## Χαρακτηριστικά
 
@@ -24,18 +24,18 @@
     const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
     const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";
 
-2. **Μεταγλώττιση (Compilation):** Μπορείτε να το κάνετε compile χρησιμοποιώντας οποιονδήποτε standard compiler της C για Windows (όπως το Dev-C++). Επειδή πρόκειται για εφαρμογή με Γραφικό Περιβάλλον (GUI) που χρησιμοποιεί εγγενείς γραμματοσειρές και χρώματα των Windows, πρέπει να συμπεριλάβετε τις εξής εντολές στον linker:
+2. **Μεταγλώττιση (Compilation):** Μπορείτε να το κάνετε compile χρησιμοποιώντας οποιονδήποτε standard compiler της C για Windows (όπως το [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Επειδή πρόκειται για εφαρμογή με Γραφικό Περιβάλλον (GUI) που χρησιμοποιεί εγγενείς γραμματοσειρές και χρώματα των Windows, πρέπει να συμπεριλάβετε τις εξής εντολές στον linker:
     -static-libgcc -mwindows
 
 3. **Εκτέλεση (Run):** Ανοίξτε το μεταγλωττισμένο .exe, ξεκινήστε το ραδιοφωνικό σας λογισμικό και το εργαλείο θα αναλάβει αθόρυβα τις μετατροπές στο παρασκήνιο!
 
 
 # Radio-Greeklish-Converter-TXT-Files
-A lightweight Windows GUI tool for web radio broadcasters. It automatically reads Greek song titles from a "Now Playing" TXT file, converts them to Greeklish, and outputs a clean file for streaming software like BUTT, solving all encoding issues
+A lightweight Windows GUI tool for web radio broadcasters. It automatically reads Greek song titles from a "Now Playing" TXT file, converts them to Greeklish, and outputs a clean file for streaming software like [BUTT](https://danielnoethen.de/butt/), solving all encoding issues
 
 A lightweight, automated Windows desktop application written in C that solves the common text-encoding problem for Greek internet radio broadcasters. 
 
-Many broadcasting tools (like BUTT) struggle to correctly display UTF-8 Greek characters in the "Now Playing" stream metadata. This tool acts as a bridge: it reads the current track from your player's output text file (e.g., AIMP with _Current Track Info to Any_ extension), instantly converts the Greek characters to Greeklish (Latin alphabet), and writes the clean, stream-ready text to a new file.
+Many broadcasting tools (like [BUTT](https://danielnoethen.de/butt/)) struggle to correctly display UTF-8 Greek characters in the "Now Playing" stream metadata. This tool acts as a bridge: it reads the current track from your player's output text file (e.g., [AIMP](https://aimp.ru/) with [_Current Track Info to Any_](https://aimp.ru/?do=catalog&rec_id=358) extension), instantly converts the Greek characters to Greeklish (Latin alphabet), and writes the clean, stream-ready text to a new file.
 
 ## Features
 * **Smart Conversion Engine:** Accurately converts Greek characters to Latin, including diphthongs (ου, αυ, ει), accented characters, and cleans up floating accents.
@@ -50,7 +50,7 @@ Many broadcasting tools (like BUTT) struggle to correctly display UTF-8 Greek ch
    const char* INPUT_FILE = "C:\\Path\\To\\Your\\Player_Output.txt";
    const char* OUTPUT_FILE = "C:\\Path\\To\\Your\\Broadcaster_Input.txt";
 
-2. **Compilation:** You can compile this using any standard C compiler for Windows (like Dev-C++). Since this is a GUI application that uses native Windows fonts and colors, you must include the following linker flags:
+2. **Compilation:** You can compile this using any standard C compiler for Windows (like [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/)). Since this is a GUI application that uses native Windows fonts and colors, you must include the following linker flags:
 -static-libgcc -mwindows
 
 3. **Run:** Launch the compiled .exe, start your radio software, and the tool will silently handle the conversions in the background!
